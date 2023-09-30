@@ -1,0 +1,14 @@
+function removeItems(array) {
+    let count = 0;
+    return array.filter((x) => {
+        if(x === 'apple' && count < 2){
+            count++
+            return false
+        }
+        return true
+    })
+}
+
+console.log(removeItems(['apple','water','apple','milk','apple','apple']));
+
+        
