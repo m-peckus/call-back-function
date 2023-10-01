@@ -1,0 +1,23 @@
+ let count = 0;
+  let intId;
+
+
+        // Add Start Button here
+    document.querySelector('.js-start-timer').addEventListener
+    ('click', () => {
+        intId = setInterval(() => {
+            console.log(++count);
+        }, 1000);
+    });
+
+    // Add Stop Button here
+    document.querySelector('.js-stop-timer').addEventListener('click', () => {
+        clearInterval(intId);
+        count = 0;
+    });
+
+    // Add Reset Button here
+    document.querySelector('.js-reset-button').addEventListener('click', () => {
+        count = 0;
+        console.log(count);
+    });
